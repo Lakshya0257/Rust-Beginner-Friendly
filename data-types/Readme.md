@@ -48,6 +48,18 @@ The `char` type represents a single Unicode scalar value, such as a letter, digi
 
 The `String` type represents a dynamically allocated, mutable UTF-8 encoded string. Unlike string literals (`&str`), which are immutable and stored in the program's binary, `String` objects can be modified and are stored on the heap. The size of a `String` can vary depending on the length of the string it holds.
 
-## Conclusion
+### Conversion in Rust
+
+In Rust, you sometimes need to convert values between different data types. Rust provides a set of conversion functions and traits to facilitate this process. One common scenario is when you need to convert between integer types, such as `i8` and `i16`.
+
+To convert a value from one type to another, you can use the `from` method provided by the target type. For example, to convert an `i8` value to an `i16`, you can use the `i16::from` method:
+
+```rust
+let y1: i8 = 251;
+let y2: i8 = 9;
+let z: i16 = i16::from(y1) + i16::from(y2);
+```
+
+### Conclusion
 
 Understanding the different data types available in Rust is crucial for writing efficient and bug-free programs. This README file provides a brief overview of the commonly used data types, including the `String` type for handling strings. For more detailed information, consult the Rust documentation.
