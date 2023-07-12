@@ -1,3 +1,6 @@
+use std::mem::size_of_val;
+
+
 fn main(){
     println!("---------Main function----------");
     let x: i32=5;
@@ -21,6 +24,11 @@ fn main(){
     }
     println!("{}",x); //prints 5
     println!();
+
+
+    //other data types
+    char();
+    bool();
 }
 
 fn mutable(){
@@ -37,5 +45,23 @@ fn shadowing(){
     x=x+9;
     let x:i32=10;
     println!("After shadowing, value of x will be {}",x);
+    println!();
+}
+
+
+fn char(){
+    println!("---------Character----------");
+    let c:char='a';
+    println!("{}",size_of_val(&c));
+    println!();
+}
+
+
+fn bool(){
+    println!("---------Boolean----------");
+    let b:bool=true;
+    if b{
+        println!("True");
+    }
     println!();
 }
