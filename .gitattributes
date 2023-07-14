@@ -1,1 +1,1 @@
-*.makefile linguist-generated=false
+*.make linguist-detectable=false
