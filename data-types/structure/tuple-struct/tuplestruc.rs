@@ -12,6 +12,10 @@ impl Rectangle{
     }
 }
 
+impl Rectangle{
+    fn create(si)
+}
+
 fn main(){
     let dem:Rectangle = Rectangle{
         width: 34,
