@@ -13,7 +13,12 @@ impl Rectangle{
 }
 
 impl Rectangle{
-    fn create(si)
+    fn createSquare(size : u32) -> Rectangle{
+        Rectangle{
+            width:size,
+            height:size
+        }
+    }
 }
 
 fn main(){
@@ -21,8 +26,16 @@ fn main(){
         width: 34,
         height: 25
     };
-    let area: u32 = dem.area(); //calling the implemented function
+
+    let sqaure:Rectangle = Rectangle::createSquare(25);
+
+    let area: u32 = Rectangle::area(&dem); //calling the implemented function
+                 //OR
+    let area1: u32 = dem.area(); //calling the implemented function
+
+    assert_eq!(area,area1);
+
     println!("{}",area);
-    println!("{:?}",dem);
+    println!("{:?}",sqaure);
 }
 
