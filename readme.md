@@ -62,7 +62,7 @@ Remember, learning Rust is an ongoing process. It takes time and practice to bec
 
 - ### [Input Output](input-output)
   
-- ### [Data Types](data-types)
+- ### [Data Types (Basic)](data-types)
   
 - ### [Variables/ Scopes](variables)
   
@@ -75,6 +75,14 @@ Remember, learning Rust is an ongoing process. It takes time and practice to bec
 - ### [Ownership](ownership)
   
 - ### [Guessing Game](guessing-game)
+  
+- ### [Data Type](data-types/structure)
+     - #### [Structure](data-types/structure)
+     - #### [Enum](data-types/enum)
+
+- ### [Code refactoring by creating module](data-types/module)
+
+
 
 
 Feel free to explore these chapters and progress through the content at your own pace. Each chapter contains code examples, explanations, and exercises to help you practice and reinforce your understanding of Rust concepts.
