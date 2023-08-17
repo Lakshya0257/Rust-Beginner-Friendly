@@ -8,4 +8,4 @@ fn main() {
     for c in 'a'..='z' {
         println!("{}", c as u16);
     }
-}
+} 
